@@ -2,10 +2,10 @@
 
     //==============================================================================================
     // Application ...
-    <string name="application_name">شركة أناة للسفر</string>
-    <string name="application_description">منظومة سفر متكاملة</string>
-    <string name="application_type">تطبيق المستخدمين</string>
-    <string name="application_rights">كل حقوق التطبيق محفوظة لصالح الفريق شركة أناة للسفر </string>
+    <string name="application_name">شركة أناة للحج والعمرة ذ.م.م</string>
+    <string name="application_description">نظام المعتمرين</string>
+    <string name="application_type">تطبيق المعتمرين</string>
+    <string name="application_rights">كل حقوق التطبيق محفوظة شركة أناة للحج والعمرة ذ.م.م</string>
     <string name="application_theme">مظهر التطبيق</string>
     <string name="application_language">لغة التطبيق</string>
 
