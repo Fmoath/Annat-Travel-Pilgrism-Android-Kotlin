@@ -43,7 +43,6 @@ object ActivityUtil {
         }
 //        activity.overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
     }
-
     fun startNewActivity(activity: Activity, newActivity: String, delay: Long, extras: Intent?, clearStack: Boolean) {
         Handler(Looper.getMainLooper()).postDelayed({
 
