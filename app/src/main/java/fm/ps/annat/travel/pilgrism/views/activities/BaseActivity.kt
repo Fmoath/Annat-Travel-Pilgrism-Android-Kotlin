@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import fm.ps.annat.travel.pilgrism.util.ActivityUtil
+import fm.ps.annat.travel.pilgrism.util.DeviceUtil
 
 /**
  * Created With Love For : Annat Travel
@@ -33,6 +34,35 @@ open class BaseActivity :AppCompatActivity() {
     }
     fun startNavigationActivity(title: String, description: String, hint: String, textButton: String, newActivity: String) {
         ActivityUtil.startNavigationActivity(this , title , description , hint, textButton , newActivity)
+    }
+
+    //==============================================================================================
+    // Device ...
+    /** Key Board **/
+    fun isKeyboardVisible() : Boolean {
+        return DeviceUtil.isKeyboardVisible(this)
+    }
+    fun hideKeyboard() {
+        DeviceUtil.hideKeyboard( this)
+    }
+
+    /** Status Bar **/
+    fun hideStatusBar() {
+        DeviceUtil.hideStatusBar(this)
+    }
+    fun setStatusBarTransparent(activity: Activity) {
+        DeviceUtil.setStatusBarTransparent(this)
+    }
+    fun changeStatusBarColor(color: Int) {
+        DeviceUtil.changeStatusBarColor(this , color)
+    }
+    fun changeStatusBarIconsColor(shouldChangeStatusBarTintToDark: Boolean) {
+        DeviceUtil.changeStatusBarIconsColor( this , shouldChangeStatusBarTintToDark)
+    }
+
+    /** Navigation Bar **/
+    fun hideNavigationBar() {
+        DeviceUtil.hideNavigationBar(this)
     }
 
 }
