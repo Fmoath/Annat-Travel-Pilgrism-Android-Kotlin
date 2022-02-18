@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">AnnatTravelPilgrism</string>
+
+    //==============================================================================================
+    // Application ...
+    <string name="application_name">شركة أناة للسفر</string>
+    <string name="application_description">منظومة سفر متكاملة</string>
+    <string name="application_type">تطبيق المستخدمين</string>
+    <string name="application_rights">كل حقوق التطبيق محفوظة لصالح الفريق شركة أناة للسفر </string>
+    <string name="application_theme">مظهر التطبيق</string>
+    <string name="application_language">لغة التطبيق</string>
+
 </resources>
