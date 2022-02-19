@@ -28,6 +28,10 @@ class OnBoardingFragment : BaseFragment() {
 
     //==============================================================================================
     // Variable ...
+    private lateinit var image : Drawable
+    private lateinit var title : String
+    private lateinit var description : String
+
     //==============================================================================================
     // On Create View  ...
     override fun onCreateView(
@@ -48,5 +52,17 @@ class OnBoardingFragment : BaseFragment() {
     //==============================================================================================
     // Initialize View ...
     private fun initializeViewComponents() {
+        image = getResourcesDrawable(requireArguments().getInt("image"))
+        title = getResourcesString(requireArguments().getInt("title"))
+        description = getResourcesString(requireArguments().getInt("description"))
+        setIntroData()
+    }
+
+    //==============================================================================================
+    // Intro Data ...
+    private fun setIntroData() {
+        itemOnBoardingBinding.onBoardingImage.setImageDrawable(image)
+        itemOnBoardingBinding.onBoardingTitle.text = title
+        itemOnBoardingBinding.onBoardingDescription.text = description
     }
 }
