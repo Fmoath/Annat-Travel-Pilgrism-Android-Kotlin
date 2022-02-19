@@ -38,4 +38,11 @@
 
     <string name="edit">تعديل</string>
 
+
+    //==============================================================================================
+    // More ...
+    <string name="image">صورة</string>
+    <string name="basic_data">البيانات الأساسية</string>
+    <string name="secondary_data">البيانات الثانوية</string>
+
 </resources>
