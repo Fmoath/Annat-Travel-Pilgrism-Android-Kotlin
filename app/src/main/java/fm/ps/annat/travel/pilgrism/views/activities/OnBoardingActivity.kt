@@ -96,13 +96,13 @@ class OnBoardingActivity : BaseActivity() , View.OnClickListener{
         override fun onPageSelected(position: Int) {
             if(position == sliderPagerAdapter.count-1){
                 isItInTheLastInterface = true
-//                useAnimationWithView(binding.onBoardingSkip , R.anim.fade_out , View.GONE)
-//                useAnimationWithView(binding.onBoardingGetStarted , R.anim.fade_in)
+                useAnimationWithView(binding.onBoardingSkip , R.anim.fade_out , View.GONE)
+                useAnimationWithView(binding.onBoardingGetStarted , R.anim.fade_in)
             }
             else if(position == sliderPagerAdapter.count-2){
                 if (isItInTheLastInterface){
-//                    useAnimationWithView(binding.onBoardingSkip , R.anim.fade_in)
-//                    useAnimationWithView(binding.onBoardingGetStarted , R.anim.fade_out)
+                    useAnimationWithView(binding.onBoardingSkip , R.anim.fade_in)
+                    useAnimationWithView(binding.onBoardingGetStarted , R.anim.fade_out)
                 }
                 isItInTheLastInterface = false
             }
