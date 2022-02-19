@@ -1,8 +1,7 @@
-package fm.ps.annat.travel.pilgrism.views.activities
+package fm.ps.annat.travel.pilgrism.views.fragments
 
-import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import fm.ps.annat.travel.pilgrism.util.ActivityUtil
 import fm.ps.annat.travel.pilgrism.util.DeviceUtil
 
@@ -12,57 +11,56 @@ import fm.ps.annat.travel.pilgrism.util.DeviceUtil
  * @by : Eng-Moath Raed Abu Ouda
  * @CompanyManager : FM-Team
  * @In : Palestine - Gaza - Biet Hanoun
- * @OnDate : 2/18/2022
- * @InTheHour : 20 : 47 : 32
+ * @OnDate : 2/19/2022
+ * @InTheHour : 18 : 48 : 12
  * @Website : fm-ps.online
  * @Whatsapp : 00972597718418
  */
-
-open class BaseActivity :AppCompatActivity() {
-
+open class BaseFragment :Fragment() {
 
     //==============================================================================================
     // Activities ...
     fun restart() {
-        ActivityUtil.restart(this )
+        ActivityUtil.restart(requireActivity())
     }
     fun startNewActivity(newActivity: String, extras: Intent?, clearStack: Boolean) {
-        ActivityUtil.startNewActivity( this , newActivity , extras, clearStack)
+        ActivityUtil.startNewActivity( requireActivity() , newActivity , extras, clearStack)
     }
     fun startNewActivity(newActivity: String, delay: Long, extras: Intent?, clearStack: Boolean) {
-        ActivityUtil.startNewActivity(this , newActivity , delay , extras, clearStack)
+        ActivityUtil.startNewActivity(requireActivity() , newActivity , delay , extras, clearStack)
     }
     fun startNavigationActivity(title: String, description: String, hint: String, textButton: String, newActivity: String) {
-        ActivityUtil.startNavigationActivity(this , title , description , hint, textButton , newActivity)
+        ActivityUtil.startNavigationActivity(requireActivity() , title , description , hint, textButton , newActivity)
     }
 
     //==============================================================================================
     // Device ...
     /** Key Board **/
     fun isKeyboardVisible() : Boolean {
-        return DeviceUtil.isKeyboardVisible(this)
+        return DeviceUtil.isKeyboardVisible(requireActivity())
     }
     fun hideKeyboard() {
-        DeviceUtil.hideKeyboard( this)
+        DeviceUtil.hideKeyboard( requireActivity())
     }
 
     /** Status Bar **/
     fun hideStatusBar() {
-        DeviceUtil.hideStatusBar(this)
+        DeviceUtil.hideStatusBar(requireActivity())
     }
     fun setStatusBarTransparent() {
-        DeviceUtil.setStatusBarTransparent(this)
+        DeviceUtil.setStatusBarTransparent(requireActivity())
     }
     fun changeStatusBarColor(color: Int) {
-        DeviceUtil.changeStatusBarColor(this , color)
+        DeviceUtil.changeStatusBarColor(requireActivity() , color)
     }
     fun changeStatusBarIconsColor(shouldChangeStatusBarTintToDark: Boolean) {
-        DeviceUtil.changeStatusBarIconsColor( this , shouldChangeStatusBarTintToDark)
+        DeviceUtil.changeStatusBarIconsColor( requireActivity() , shouldChangeStatusBarTintToDark)
     }
 
     /** Navigation Bar **/
     fun hideNavigationBar() {
-        DeviceUtil.hideNavigationBar(this)
+        DeviceUtil.hideNavigationBar(requireActivity())
     }
+
 
 }
