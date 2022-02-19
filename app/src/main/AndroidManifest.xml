@@ -9,9 +9,18 @@
         android:roundIcon="@drawable/ic_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AnnatTravelPilgrism">
+
         <activity
             android:name=".views.activities.OnBoardingActivity"
-            android:exported="false" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="fm.ps.annat.travel.pilgrism" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="OnBoardingActivity" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".views.activities.SplashScreenActivity"
             android:exported="true">

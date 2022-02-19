@@ -20,7 +20,7 @@ import fm.ps.annat.travel.pilgrism.databinding.FragmentOnBoardingBinding
  * @Website : fm-ps.online
  * @Whatsapp : 00972597718418
  */
-class OnBoardingFragment : BaseFragment() {
+class OnBoardingSliderFragment : BaseFragment() {
 
     //==============================================================================================
     // Binding ...
