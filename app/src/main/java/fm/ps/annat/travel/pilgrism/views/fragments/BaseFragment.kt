@@ -1,9 +1,11 @@
 package fm.ps.annat.travel.pilgrism.views.fragments
 
 import android.content.Intent
+import android.graphics.drawable.Drawable
 import androidx.fragment.app.Fragment
 import fm.ps.annat.travel.pilgrism.util.ActivityUtil
 import fm.ps.annat.travel.pilgrism.util.DeviceUtil
+import fm.ps.annat.travel.pilgrism.util.ResourceUtil
 
 /**
  * Created With Love For : Annat Travel
@@ -62,5 +64,15 @@ open class BaseFragment :Fragment() {
         DeviceUtil.hideNavigationBar(requireActivity())
     }
 
-
+    //==============================================================================================
+    // Resources ...
+    fun getResourcesString(id: Int) : String{
+        return ResourceUtil.getResourcesString( requireActivity() , id)
+    }
+    fun getResourcesColor(id: Int) : Int{
+        return ResourceUtil.getResourcesColor( requireActivity() , id)
+    }
+    fun getResourcesDrawable(id: Int) : Drawable {
+        return ResourceUtil.getResourcesDrawable( requireActivity() , id)
+    }
 }
