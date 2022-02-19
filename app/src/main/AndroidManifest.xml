@@ -9,7 +9,9 @@
         android:roundIcon="@drawable/ic_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AnnatTravelPilgrism">
-
+        <activity
+            android:name=".views.activities.OnBoardingActivity"
+            android:exported="false" />
         <activity
             android:name=".views.activities.SplashScreenActivity"
             android:exported="true">
