@@ -1,4 +1,4 @@
-package fm.ps.annat.travel.pilgrism.util
+package fm.ps.annat.travel.pilgrism.keys
 
 /**
  * Created With Love For : Annat Travel
@@ -16,4 +16,5 @@ object Validations {
     const val EMAIL = 2
     const val PASSWORD = 3
     const val NAME = 4
+    const val PASSPORT = 5
 }

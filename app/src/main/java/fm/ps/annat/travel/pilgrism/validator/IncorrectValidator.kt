@@ -3,7 +3,8 @@ package fm.ps.annat.travel.pilgrism.validator
 import android.widget.EditText
 import fm.ps.annat.travel.pilgrism.abstract.ValidatorAbstract
 import fm.ps.annat.travel.pilgrism.util.Messages
-import fm.ps.annat.travel.pilgrism.util.Validations
+import fm.ps.annat.travel.pilgrism.keys.Validations
+import fm.ps.annat.travel.pilgrism.util.VariableUtil
 
 /**
  * Created With Love For : Annat Travel
@@ -58,6 +59,16 @@ class IncorrectValidator(private var editText: EditText, private var type : Int)
 
     private fun validationPassword() : Boolean{
         return if (VariableUtil.isThePasswordCorrect(editText)){
+            editText.error = null
+            true
+        }else{
+            editText.error = getErrorMessage(editText)
+            false
+        }
+    }
+
+    private fun validationPassport() : Boolean{
+        return if (VariableUtil.isThePassportCorrect(editText)){
             editText.error = null
             true
         }else{
