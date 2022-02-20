@@ -6,10 +6,7 @@ import android.graphics.drawable.Drawable
 import android.view.View
 import android.view.animation.Animation
 import androidx.appcompat.app.AppCompatActivity
-import fm.ps.annat.travel.pilgrism.util.ActivityUtil
-import fm.ps.annat.travel.pilgrism.util.AnimationUtil
-import fm.ps.annat.travel.pilgrism.util.DeviceUtil
-import fm.ps.annat.travel.pilgrism.util.ResourceUtil
+import fm.ps.annat.travel.pilgrism.util.*
 
 /**
  * Created With Love For : Annat Travel
@@ -68,6 +65,15 @@ open class BaseActivity :AppCompatActivity() {
     /** Navigation Bar **/
     fun hideNavigationBar() {
         DeviceUtil.hideNavigationBar(this)
+    }
+
+    //==============================================================================================
+    // Views ...
+    fun disabledViews(vararg views: View){
+        ViewsUtil.disabledViews(*views)
+    }
+    fun enabledViews(vararg views: View){
+        ViewsUtil.enabledViews(*views)
     }
 
     //==============================================================================================
