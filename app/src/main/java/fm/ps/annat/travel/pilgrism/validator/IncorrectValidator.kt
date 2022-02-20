@@ -2,6 +2,7 @@ package fm.ps.annat.travel.pilgrism.validator
 
 import android.widget.EditText
 import fm.ps.annat.travel.pilgrism.abstract.ValidatorAbstract
+import fm.ps.annat.travel.pilgrism.util.Messages
 import fm.ps.annat.travel.pilgrism.util.Validations
 
 /**
