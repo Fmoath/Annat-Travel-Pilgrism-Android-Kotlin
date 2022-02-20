@@ -54,6 +54,9 @@
     //==============================================================================================
     // Sign ...
     <string name="sign_in">تسجيل الدخول</string>
+    <string name="passport_number">رقم جواز السفر</string>
+    <string name="set_password">تعيين كلمة المرور</string>
+    <string name="new_password">كلمة المرور الجديدة</string>
     <string name="forget_password">أرسل لي كلمة المرور</string>
     <string name="sign_in_description">قم بكتابة البيانات المطلوبة كما هي مطلوبة لتتمكن من الإستفادة من خدمات التطبيق</string>
     <string name="account_recovery_description">في حال واجهتك أي مشكلة إعرضها على الموظف المرافق لكم</string>
@@ -68,6 +71,6 @@
     <string name="image">صورة</string>
     <string name="basic_data">البيانات الأساسية</string>
     <string name="secondary_data">البيانات الثانوية</string>
-    <string name="passport_number">رقم جواز السفر</string>
+    <string name="skip_password">تخطي دون تغيير كلمة المرور</string>
 
 </resources>

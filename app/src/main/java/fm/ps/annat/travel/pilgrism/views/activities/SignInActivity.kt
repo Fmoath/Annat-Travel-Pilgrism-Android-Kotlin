@@ -50,7 +50,7 @@ class SignInActivity : BaseActivity() , View.OnClickListener{
     }
     override fun onClick(view: View?) {
         when (view) {
-            binding.signIn -> signUp()
+            binding.signIn -> startNavigationActivity("تم تسجيل الدخول بنجاح" , "مرحباً أخينا أحمد بن عبد الرحمن العقيل لقت تم تسجيل دخولك بنجاح ولكن لدواعي الآمان نتمنى منك تغيير كلمة المرور الإفتراضية إلى كلمة مرور خاصة بك" , "تقبل منا فائق الإحترام والتقدير" , "تعيين كلمة المرور" , Activities.MAIN_ACTIVITY)
         }
     }
 

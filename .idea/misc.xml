@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable/ic_logo.xml" value="0.2045" />
+        <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable/im_like.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable/im_on_boarding.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable/selector_shape_rectangle_amber_to_blue.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable/selector_shape_rectangle_amber_to_grey.xml" value="0.2045" />
@@ -13,6 +14,7 @@
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable/shape_rectangle_corner_grey.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable/shape_rectangle_corner_white.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/layout/activity_main.xml" value="0.2546875" />
+        <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/layout/activity_navigation.xml" value="0.26875" />
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/layout/activity_on_boarding.xml" value="0.26875" />
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/layout/activity_sign_in.xml" value="0.26875" />
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/layout/activity_splash_screen.xml" value="0.26875" />
