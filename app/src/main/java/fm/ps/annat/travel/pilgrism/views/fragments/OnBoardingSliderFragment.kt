@@ -46,15 +46,20 @@ class OnBoardingSliderFragment : BaseFragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        initializeViewComponents()
+        initializeFragment()
     }
 
     //==============================================================================================
-    // Initialize View ...
-    private fun initializeViewComponents() {
+    // Initialize Fragment ...
+    private fun initializeFragment() {
         image = getResourcesDrawable(requireArguments().getInt("image"))
         title = getResourcesString(requireArguments().getInt("title"))
         description = getResourcesString(requireArguments().getInt("description"))
+
+        initializeView()
+    }
+
+    private fun initializeView() {
         setIntroData()
     }
 

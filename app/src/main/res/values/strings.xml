@@ -51,11 +51,18 @@
     <string name="on_boarding_description_four">هنا يظهر تفاصيل بسيطة لا تتجاوز سطر واحد فقط للتعريف عن العنوان الرابع</string>
     <string name="on_boarding_description_five">هنا يظهر تفاصيل بسيطة لا تتجاوز سطر واحد فقط للتعريف عن العنوان الخامس</string>
 
+    //==============================================================================================
+    // Sign ...
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="forget_password">أرسل لي كلمة المرور</string>
+    <string name="sign_in_description">قم بكتابة البيانات المطلوبة كما هي مطلوبة لتتمكن من الإستفادة من خدمات التطبيق</string>
+    <string name="account_recovery_description">في حال واجهتك أي مشكلة إعرضها على الموظف المرافق لكم</string>
 
     //==============================================================================================
     // More ...
     <string name="image">صورة</string>
     <string name="basic_data">البيانات الأساسية</string>
     <string name="secondary_data">البيانات الثانوية</string>
+    <string name="passport_number">رقم جواز السفر</string>
 
 </resources>
