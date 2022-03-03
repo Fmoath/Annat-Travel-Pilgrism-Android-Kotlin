@@ -10,6 +10,7 @@ import com.google.android.material.navigation.NavigationBarView
 import fm.ps.annat.travel.pilgrism.R
 import fm.ps.annat.travel.pilgrism.databinding.ActivityMainBinding
 import fm.ps.annat.travel.pilgrism.util.BottomNavigationUtil.deselectAllItems
+import fm.ps.annat.travel.pilgrism.views.fragments.HomeFragment
 
 class MainActivity : BaseActivity() , View.OnClickListener , NavigationBarView.OnItemSelectedListener {
 
@@ -33,7 +34,7 @@ class MainActivity : BaseActivity() , View.OnClickListener , NavigationBarView.O
     private fun initializeActivity(){
         initializeViews()
         listener()
-        //replaceFragment( HomeFragment() , "home_fragment")
+        replaceFragment( HomeFragment() , "home_fragment")
     }
 
     private fun initializeViews(){
@@ -58,7 +59,7 @@ class MainActivity : BaseActivity() , View.OnClickListener , NavigationBarView.O
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         return when(item.itemId){
             R.id.main_menu_home -> {
-                //replaceFragment( HomeFragment() , "home_fragment")
+                replaceFragment( HomeFragment() , "home_fragment")
                 true
             }
             R.id.main_menu_location -> {

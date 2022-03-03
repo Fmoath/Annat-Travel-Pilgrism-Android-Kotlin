@@ -379,7 +379,7 @@ class MultiStateSwitch @JvmOverloads constructor(
         val stateBm = createBitmapFromView(stateTV)
         // Create shadow
         val shadowBm = createShadow(stateBm, shadowBottomOverflowPx / 2)
-        return BitmapDrawable(resources, combineBitmaps(shadowBm, if (shadow) 50 else 0, stateBm, shadowTopOverflowPx.toFloat()))
+        return BitmapDrawable(resources, combineBitmaps(shadowBm, if (shadow) 0 else 0, stateBm, shadowTopOverflowPx.toFloat()))
     }
 
     /**
