@@ -6,8 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import com.davidmiguel.multistateswitch.State
+import com.davidmiguel.multistateswitch.StateListener
 import fm.ps.annat.travel.pilgrism.R
 import fm.ps.annat.travel.pilgrism.databinding.FragmentHomeBinding
+import fm.ps.annat.travel.pilgrism.keys.Locations
 
 /**
  * Created With Love For : Annat Travel
@@ -20,7 +23,7 @@ import fm.ps.annat.travel.pilgrism.databinding.FragmentHomeBinding
  * @Website : fm-ps.online
  * @Whatsapp : 00972597718418
  */
-class HomeFragment : BaseFragment() {
+class HomeFragment : BaseFragment()  , StateListener {
 
     //==============================================================================================
     // Binding ...
@@ -60,6 +63,18 @@ class HomeFragment : BaseFragment() {
     //==============================================================================================
     // Listener ...
     private fun listener() {
+        binding.fragmentHomeSwitch.addStateListener( this )
+    }
 
+    override fun onStateSelected(stateIndex: Int, state: State) {
+        when (stateIndex){
+            0 -> replaceFragment(LocationFragment(Locations.LOCATION_HOME) , "location fragment")
+        }
+    }
+
+    //==============================================================================================
+    // More Function ...
+    private fun replaceFragment(fragment: Fragment, tag: String) {
+        replaceFragment(fragment , tag , R.id.fragment_home_container , true)
     }
 }
