@@ -132,7 +132,7 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener {
         contactUss.add(ContactUs( 0 , "العفو .. تقبل فائق إحترامنا وتقديرنا\nمع تحياتنا في مركز التواصل والدعم" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_COMPANY))
 
         contactUsRecyclerAdapter = ContactUsRecyclerAdapter(contactUss)
-        initializeRecyclerLinearVerticalView(contactUsRecyclerAdapter , false)
+        initializeRecyclerLinearVerticalView(contactUsRecyclerAdapter , true)
     }
 
     //==============================================================================================
