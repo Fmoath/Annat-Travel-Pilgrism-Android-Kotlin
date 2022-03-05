@@ -28,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:textColor="@color/amber" />
+                android:textColor="@color/blue" />
 
             <TextView
                 android:id="@+id/item_notification_date"
