@@ -11,10 +11,7 @@ import fm.ps.annat.travel.pilgrism.R
 import fm.ps.annat.travel.pilgrism.databinding.ActivityMainBinding
 import fm.ps.annat.travel.pilgrism.keys.Locations
 import fm.ps.annat.travel.pilgrism.util.BottomNavigationUtil.deselectAllItems
-import fm.ps.annat.travel.pilgrism.views.fragments.ContactUsFragment
-import fm.ps.annat.travel.pilgrism.views.fragments.HomeFragment
-import fm.ps.annat.travel.pilgrism.views.fragments.LocationFragment
-import fm.ps.annat.travel.pilgrism.views.fragments.ProfileFragment
+import fm.ps.annat.travel.pilgrism.views.fragments.*
 
 class MainActivity : BaseActivity() , View.OnClickListener , NavigationBarView.OnItemSelectedListener {
 
@@ -75,7 +72,7 @@ class MainActivity : BaseActivity() , View.OnClickListener , NavigationBarView.O
                 true
             }
             R.id.main_menu_notification -> {
-                //replaceFragment( NotificationFragment() , "notification_fragment")
+                replaceFragment( NotificationFragment() , "notification_fragment")
                 true
             }
             R.id.main_menu_setting -> {
