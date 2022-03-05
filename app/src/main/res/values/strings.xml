@@ -100,5 +100,8 @@
     <string name="image_personal">صورتك الشخصية</string>
     <string name="mobile_number_inside_saudi_arabi">رقم هاتفك داخل المملكة العربية السعودية</string>
     <string name="mobile_number_in_home_country">رقم هاتفك الأساسي في بلدك</string>
+    <string name="fragment_contact_us_description">هذه المحادثة بينك وبين</string>
+    <string name="fragment_contact_us_description_sec">مركز الدعم والتواصل في الشركة</string>
+    <string name="message_text">نص الرسالة</string>
 
 </resources>

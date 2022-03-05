@@ -10,6 +10,7 @@ import com.google.android.material.navigation.NavigationBarView
 import fm.ps.annat.travel.pilgrism.R
 import fm.ps.annat.travel.pilgrism.databinding.ActivityMainBinding
 import fm.ps.annat.travel.pilgrism.util.BottomNavigationUtil.deselectAllItems
+import fm.ps.annat.travel.pilgrism.views.fragments.ContactUsFragment
 import fm.ps.annat.travel.pilgrism.views.fragments.HomeFragment
 import fm.ps.annat.travel.pilgrism.views.fragments.ProfileFragment
 
@@ -68,7 +69,7 @@ class MainActivity : BaseActivity() , View.OnClickListener , NavigationBarView.O
                 true
             }
             R.id.main_menu_contact_us -> {
-                //replaceFragment( ContactUsFragment() , "contact_us_fragment")
+                replaceFragment( ContactUsFragment() , "contact_us_fragment")
                 true
             }
             R.id.main_menu_notification -> {
