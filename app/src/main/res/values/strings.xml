@@ -103,5 +103,6 @@
     <string name="fragment_contact_us_description">هذه المحادثة بينك وبين</string>
     <string name="fragment_contact_us_description_sec">مركز الدعم والتواصل في الشركة</string>
     <string name="message_text">نص الرسالة</string>
+    <string name="report_my_loss_to_the_company">إبلاغ الشركة عن ضياعي</string>
 
 </resources>

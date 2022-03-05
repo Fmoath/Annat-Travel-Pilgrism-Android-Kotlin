@@ -36,8 +36,8 @@ class ErrorFragment(private val image: Drawable, private val title: String, priv
         return binding.root
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         initializeFragment()
     }
 
