@@ -76,7 +76,7 @@ class MainActivity : BaseActivity() , View.OnClickListener , NavigationBarView.O
                 true
             }
             R.id.main_menu_setting -> {
-                //replaceFragment( SettingFragment() , "setting_fragment")
+                replaceFragment( SettingFragment() , "setting_fragment")
                 true
             }
             else -> false

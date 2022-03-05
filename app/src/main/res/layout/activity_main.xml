@@ -68,7 +68,7 @@
                 android:id="@+id/main_profile_details_user_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/dev_name"
+                android:text="@string/owner_name"
                 style="@style/Text_h5_m"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
