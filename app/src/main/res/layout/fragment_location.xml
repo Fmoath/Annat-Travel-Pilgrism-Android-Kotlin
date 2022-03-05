@@ -73,10 +73,10 @@
                 android:layout_height="@dimen/_40sdp"
                 style="@style/Button_amber"
                 android:text="@string/report_my_loss_to_the_company"
-                android:layout_marginStart="@dimen/_40sdp"
-                android:layout_marginEnd="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_15sdp"
-                android:layout_marginBottom="@dimen/_10sdp" />
+                android:layout_marginBottom="@dimen/_20sdp" />
 
 
         </LinearLayout>

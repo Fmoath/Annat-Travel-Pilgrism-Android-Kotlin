@@ -5,12 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.fragment.app.Fragment
-import com.davidmiguel.multistateswitch.State
-import com.davidmiguel.multistateswitch.StateListener
 import fm.ps.annat.travel.pilgrism.R
-import fm.ps.annat.travel.pilgrism.databinding.FragmentHomeBinding
-import fm.ps.annat.travel.pilgrism.keys.Locations
+import fm.ps.annat.travel.pilgrism.databinding.FragmentTripBriefDataBinding
 
 /**
  * Created With Love For : Annat Travel
@@ -18,16 +14,16 @@ import fm.ps.annat.travel.pilgrism.keys.Locations
  * @by : Eng-Moath Raed Abu Ouda
  * @CompanyManager : FM-Team
  * @In : Palestine - Gaza - Biet Hanoun
- * @OnDate : 3/3/2022
- * @InTheHour : 11 : 17 : 33
+ * @OnDate : 3/5/2022
+ * @InTheHour : 11 : 13 : 02
  * @Website : fm-ps.online
  * @Whatsapp : 00972597718418
  */
-class HomeFragment : BaseFragment()  , StateListener {
+class TripBriefDataFragment : BaseFragment() {
 
     //==============================================================================================
     // Binding ...
-    private lateinit var binding: FragmentHomeBinding
+    private lateinit var binding: FragmentTripBriefDataBinding
 
     //==============================================================================================
     // Variable ...
@@ -39,7 +35,8 @@ class HomeFragment : BaseFragment()  , StateListener {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
+        binding =
+            DataBindingUtil.inflate(inflater, R.layout.fragment_trip_brief_data, container, false)
         return binding.root
     }
 
@@ -56,27 +53,12 @@ class HomeFragment : BaseFragment()  , StateListener {
     }
 
     private fun initializeView() {
-        binding.fragmentHomeSwitch.addStatesFromStrings(listOf( "بيانات الموقع" , "بيانات الرحلة" ))
-        binding.fragmentHomeSwitch.selectState(1 , true)
-        replaceFragment(TripBriefDataFragment() , "trip brief data fragment")
+
     }
 
     //==============================================================================================
     // Listener ...
     private fun listener() {
-        binding.fragmentHomeSwitch.addStateListener( this )
-    }
 
-    override fun onStateSelected(stateIndex: Int, state: State) {
-        when (stateIndex){
-            0 -> replaceFragment(LocationFragment(Locations.LOCATION_HOME) , "location fragment")
-            1 -> replaceFragment(TripBriefDataFragment() , "trip brief data fragment")
-        }
-    }
-
-    //==============================================================================================
-    // More Function ...
-    private fun replaceFragment(fragment: Fragment, tag: String) {
-        replaceFragment(fragment , tag , R.id.fragment_home_container , true)
     }
 }

@@ -128,5 +128,6 @@
     <string name="secondary_data">البيانات الثانوية</string>
     <string name="accompanying">المحرم</string>
     <string name="skip_password">تخطي دون تغيير كلمة المرور</string>
+    <string name="view_all_trip_details">مشاهدة كافة تفاصيل الرحلة</string>
 
 </resources>
