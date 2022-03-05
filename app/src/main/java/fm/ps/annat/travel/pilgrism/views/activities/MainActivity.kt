@@ -11,6 +11,7 @@ import fm.ps.annat.travel.pilgrism.R
 import fm.ps.annat.travel.pilgrism.databinding.ActivityMainBinding
 import fm.ps.annat.travel.pilgrism.util.BottomNavigationUtil.deselectAllItems
 import fm.ps.annat.travel.pilgrism.views.fragments.HomeFragment
+import fm.ps.annat.travel.pilgrism.views.fragments.ProfileFragment
 
 class MainActivity : BaseActivity() , View.OnClickListener , NavigationBarView.OnItemSelectedListener {
 
@@ -50,9 +51,9 @@ class MainActivity : BaseActivity() , View.OnClickListener , NavigationBarView.O
 
     override fun onClick(view: View?) {
         if (view == binding.fragmentHomeProfile){
-            binding.fragmentHomeProfile.isSelected = true
+            replaceFragment( ProfileFragment() , "profile_fragment")
             binding.mainBottomBarOption.deselectAllItems()
-            //replaceFragment( ProfileFragment() , "profile_fragment")
+            binding.fragmentHomeProfile.isSelected = true
         }
     }
 
