@@ -11,10 +11,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import fm.ps.annat.travel.pilgrism.R
 import fm.ps.annat.travel.pilgrism.adapter.recycler.contactus.ContactUsRecyclerAdapter
+import fm.ps.annat.travel.pilgrism.adapter.recycler.notification.NotificationRecyclerAdapter
 import fm.ps.annat.travel.pilgrism.databinding.FragmentRecyclerBinding
 import fm.ps.annat.travel.pilgrism.keys.ContactUss
 import fm.ps.annat.travel.pilgrism.keys.Recyclers
 import fm.ps.annat.travel.pilgrism.model.ContactUs
+import fm.ps.annat.travel.pilgrism.model.Notification
 import kotlin.properties.Delegates
 
 /**
@@ -54,10 +56,12 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener {
     //==============================================================================================
     // Arrays List ...
     private val contactUss : ArrayList<ContactUs> = ArrayList<ContactUs>()
+    private val notifications : ArrayList<Notification> = ArrayList<Notification>()
 
     //==============================================================================================
     // Adapter ...
     private lateinit var contactUsRecyclerAdapter: ContactUsRecyclerAdapter
+    private lateinit var notificationRecyclerAdapter: NotificationRecyclerAdapter
 
     //==============================================================================================
     // Variable ...
@@ -100,6 +104,7 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener {
     override fun onLayoutChange(p0: View?, left: Int, top: Int, right: Int, bottom: Int, oldLeft: Int, oldTop: Int, oldRight: Int, oldBottom: Int) {
         when (type) {
             Recyclers.RECYCLER_CONTACT_US -> binding.fragmentRecycler.scrollToPosition(contactUss.size-1)
+            Recyclers.RECYCLER_NOTIFICATION -> binding.fragmentRecycler.scrollToPosition(0)
         }
     }
 
@@ -108,11 +113,12 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener {
     private fun setRecycler() {
         when (type) {
             Recyclers.RECYCLER_CONTACT_US -> contactUsRecycler()
+            Recyclers.RECYCLER_NOTIFICATION -> notificationRecycler()
         }
     }
 
     //==============================================================================================
-    // Services Categories In HomeRecycler ...
+    // Contact Us Recycler ...
     private fun contactUsRecycler() {
         contactUss.clear()
         binding.fragmentRecycler.isNestedScrollingEnabled = false
@@ -133,6 +139,22 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener {
 
         contactUsRecyclerAdapter = ContactUsRecyclerAdapter(contactUss)
         initializeRecyclerLinearVerticalView(contactUsRecyclerAdapter , true)
+    }
+
+    //==============================================================================================
+    // Contact Us Recycler ...
+    private fun notificationRecycler() {
+        notifications.clear()
+        binding.fragmentRecycler.isNestedScrollingEnabled = false
+        notifications.add(Notification( 0 , "ملاحظة" , "في حال واجهتكم مشكلة لا تتردوا في التواصل مع مركز الدعم والمساعدة من خلال المحادثة من خلال الضغط على أيقونة الدردشة بالأسفل" , "12-4-2022 , 3:40 PM"))
+        notifications.add(Notification( 0 , "تنبيه" , "معتمرينا الكرام ,في حال ضياعك يمكنك متابعة مكانك من خلال الصفحة المخصصة لذلك والتي يمكنك الوصول لها من خلال أيقونة الموقع الموجودة في الأسفل" , "12-4-2022 , 3:40 PM"))
+        notifications.add(Notification( 0 , "إنتهت مرحلة بفضل الله" , "معتمرنا الكريم ,نود إخبارك أنه بفضل الله إنتهت المرحلة الاولى من مراحل الرحلة وهي مرحلة النقل" , "12-4-2022 , 3:40 PM"))
+        notifications.add(Notification( 0 , "إنطلاق مرحلة جديدة" , "المعتمر الكريم ,لقد بدأت مرحلة جديدة وهي مرحلة النقل من المطار إلى التسكين في الفندق" , "12-4-2022 , 3:40 PM"))
+        notifications.add(Notification( 0 , "بدأت الرحلة" , "اليوم تبدأ بعون الله رحلتكم ف نرجو لكم التوفيق والسلامة في كل مناسككم" , "12-4-2022 , 3:40 PM"))
+        notifications.add(Notification( 0 , "أهلاً بكم" , "معتمرينا الكرام أهلاً وسهلاً بكم على أرض المملكة العربية السعودية كما ونتشرف اليوم بخدمتكم" , "12-4-2022 , 3:40 PM"))
+
+        notificationRecyclerAdapter = NotificationRecyclerAdapter(notifications)
+        initializeRecyclerLinearVerticalView(notificationRecyclerAdapter , false)
     }
 
     //==============================================================================================
