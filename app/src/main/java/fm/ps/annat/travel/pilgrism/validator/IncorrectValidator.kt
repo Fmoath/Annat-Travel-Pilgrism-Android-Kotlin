@@ -31,6 +31,9 @@ class IncorrectValidator(private var editText: EditText, private var type : Int)
                 Validations.PASSWORD -> {
                     validationPassword()
                 }
+                Validations.PASSPORT -> {
+                    validationPassport()
+                }
                 else -> {
                     false
                 }

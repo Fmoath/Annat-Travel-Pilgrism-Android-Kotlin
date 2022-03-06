@@ -50,19 +50,19 @@ class SignInActivity : BaseActivity() , View.OnClickListener{
     }
     override fun onClick(view: View?) {
         when (view) {
-            binding.signIn -> startNavigationActivity("تم تسجيل الدخول بنجاح" , "مرحباً أخينا أحمد بن عبد الرحمن العقيل لقت تم تسجيل دخولك بنجاح ولكن لدواعي الآمان نتمنى منك تغيير كلمة المرور الإفتراضية إلى كلمة مرور خاصة بك" , "تقبل منا فائق الإحترام والتقدير" , "تعيين كلمة المرور" , Activities.MAIN_ACTIVITY)
+            binding.signIn -> signIn()
         }
     }
 
     //==============================================================================================
     // Sign In User ...
-    private fun signUp(){
+    private fun signIn(){
         val sign = signInRepository.signIn()
         disabledViews(binding.signInPassport , binding.signInPassword , binding.signIn)
         useAnimationWithView(binding.signIn , R.anim.fade_out)
         useAnimationWithView(binding.signInProgress , R.anim.fade_in)
         if(sign){
-            startNavigationActivity( "تم تسجيل الدخول بنجاح" , "لقد تم تسجيل دخولك بنجاح نتمنى ان تقوةم بمراجعة بريدك الإلكتروني من اجل تنشيط حسابك" , "كل الإحترام والتقدير لكم" , "متابعة" , Activities.MAIN_ACTIVITY )
+            startNavigationActivity("تم تسجيل الدخول بنجاح" , "مرحباً أخينا أحمد بن عبد الرحمن العقيل لقت تم تسجيل دخولك بنجاح ولكن لدواعي الآمان نتمنى منك تغيير كلمة المرور الإفتراضية إلى كلمة مرور خاصة بك" , "تقبل منا فائق الإحترام والتقدير" , "تعيين كلمة المرور" , Activities.MAIN_ACTIVITY)
         }else{
             enabledViews(binding.signInPassport , binding.signInPassword , binding.signIn )
             useAnimationWithView(binding.signIn , R.anim.fade_in)

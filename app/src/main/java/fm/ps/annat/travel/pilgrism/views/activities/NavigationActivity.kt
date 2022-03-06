@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import fm.ps.annat.travel.pilgrism.R
 import fm.ps.annat.travel.pilgrism.databinding.ActivityNavigationBinding
+import fm.ps.annat.travel.pilgrism.keys.Activities
 import fm.ps.annat.travel.pilgrism.keys.Variables
 
 class NavigationActivity : BaseActivity() , View.OnClickListener {
@@ -52,7 +53,7 @@ class NavigationActivity : BaseActivity() , View.OnClickListener {
     override fun onClick(view: View?) {
         when(view){
             binding.navigationButton -> startNewActivity(extras.getString(Variables.ACTIVITY).toString() , null , true )
-            binding.navigationButton -> Toast.makeText( this , "تخطي دون تغيير كلمة المرور" , Toast.LENGTH_LONG).show()
+            binding.navigationSkip -> startNewActivity(Activities.MAIN_ACTIVITY , null , true)
         }
     }
 

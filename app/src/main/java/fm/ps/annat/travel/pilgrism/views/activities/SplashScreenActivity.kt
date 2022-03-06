@@ -29,7 +29,7 @@ class SplashScreenActivity : BaseActivity() {
     //==============================================================================================
     // Initialize Activity ...
     private fun initializeActivity(){
-        startNewActivity( Activities.TRIP_STAGE_ACTIVITY, 1000 , null , true)
+        startNewActivity( Activities.ON_BOARDING_ACTIVITY, 1000 , null , true)
     }
 
 }

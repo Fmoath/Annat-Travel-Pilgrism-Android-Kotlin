@@ -33,6 +33,11 @@
     <string name="user_image">صورة المستخدم</string>
     <string name="e_mail">البريد الإلكتروني</string>
     <string name="mobile">رقم الهاتف</string>
+    <string name="city">المدينة</string>
+    <string name="port">المنفذ</string>
+    <string name="date">التاريخ</string>
+    <string name="time">الوقت</string>
+    <string name="accompanying">المحرم</string>
     <string name="mobile_number_inside_saudi_arabi">رقم هاتفك داخل المملكة العربية السعودية</string>
     <string name="mobile_number_in_home_country">رقم هاتفك الأساسي في بلدك</string>
     <string name="password">كلمة المرور</string>
@@ -103,6 +108,27 @@
     <string name="fragment_notification_description_sec">عدد الرسائل غير مقروءة : 5</string>
 
     //==============================================================================================
+    // Trip ...
+    <string name="trip_transporter">الناقل</string>
+    <string name="trip_reservations">حجوزات الرحلة</string>
+    <string name="trip_stage">مراحل الرحلة</string>
+    <string name="trip_number">رقم الرحلة</string>
+    <string name="view_all_trip_details">مشاهدة كافة تفاصيل الرحلة</string>
+    <string name="work_statement_number">رقم كشف العمل</string>
+
+    //==============================================================================================
+    // Reservation ...
+    <string name="reservations_type">نوع الحجز</string>
+    <string name="reservations_place">مكان الحجز</string>
+    <string name="reservations_period">مدة الحجز</string>
+
+    //==============================================================================================
+    // Stage ...
+    <string name="stage_completed">مرحلة مكتملة</string>
+    <string name="stage_underway">قيد التقدم</string>
+    <string name="stage_did_not_start">لم تبدأ بعد</string>
+
+    //==============================================================================================
     // Language ...
     <string name="ar">اللغة العربية</string>
 
@@ -126,23 +152,6 @@
     <string name="image">صورة</string>
     <string name="basic_data">البيانات الأساسية</string>
     <string name="secondary_data">البيانات الثانوية</string>
-    <string name="accompanying">المحرم</string>
     <string name="skip_password">تخطي دون تغيير كلمة المرور</string>
-    <string name="view_all_trip_details">مشاهدة كافة تفاصيل الرحلة</string>
-    <string name="work_statement_number">رقم كشف العمل</string>
-    <string name="trip_reservations">حجوزات الرحلة</string>
-    <string name="trip_stage">مراحل الرحلة</string>
-    <string name="trip_number">رقم الرحلة</string>
-    <string name="trip_transporter">الناقل</string>
-    <string name="city">المدينة</string>
-    <string name="port">المنفذ</string>
-    <string name="date">التاريخ</string>
-    <string name="time">الوقت</string>
-    <string name="reservations_type">نوع الحجز</string>
-    <string name="reservations_place">مكان الحجز</string>
-    <string name="reservations_period">مدة الحجز</string>
-    <string name="stage_completed">مرحلة مكتملة</string>
-    <string name="stage_underway">قيد التقدم</string>
-    <string name="stage_did_not_start">لم تبدأ بعد</string>
 
 </resources>

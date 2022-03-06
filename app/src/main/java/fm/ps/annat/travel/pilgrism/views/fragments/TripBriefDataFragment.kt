@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import fm.ps.annat.travel.pilgrism.R
 import fm.ps.annat.travel.pilgrism.databinding.FragmentTripBriefDataBinding
+import fm.ps.annat.travel.pilgrism.keys.Activities
 
 /**
  * Created With Love For : Annat Travel
@@ -19,7 +20,7 @@ import fm.ps.annat.travel.pilgrism.databinding.FragmentTripBriefDataBinding
  * @Website : fm-ps.online
  * @Whatsapp : 00972597718418
  */
-class TripBriefDataFragment : BaseFragment() {
+class TripBriefDataFragment : BaseFragment() , View.OnClickListener{
 
     //==============================================================================================
     // Binding ...
@@ -59,6 +60,12 @@ class TripBriefDataFragment : BaseFragment() {
     //==============================================================================================
     // Listener ...
     private fun listener() {
+        binding.fragmentTripBriefDataTripDetails.setOnClickListener( this )
+    }
 
+    override fun onClick(view: View?) {
+        if (view == binding.fragmentTripBriefDataTripDetails){
+            startNewActivity( Activities.TRIP_DETAILS_ACTIVITY , null , false )
+        }
     }
 }
