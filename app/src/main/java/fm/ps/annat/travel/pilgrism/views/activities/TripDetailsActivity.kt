@@ -1,18 +1,16 @@
 package fm.ps.annat.travel.pilgrism.views.activities
 
-import android.annotation.SuppressLint
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import fm.ps.annat.travel.pilgrism.R
-import fm.ps.annat.travel.pilgrism.databinding.ActivitySplashScreenBinding
-import fm.ps.annat.travel.pilgrism.keys.Activities
+import fm.ps.annat.travel.pilgrism.databinding.ActivityTripDetailsBinding
 
-@SuppressLint("CustomSplashScreen")
-class SplashScreenActivity : BaseActivity() {
+class TripDetailsActivity : BaseActivity() {
 
     //==============================================================================================
     // Binding ...
-    private lateinit var binding : ActivitySplashScreenBinding
+    private lateinit var binding : ActivityTripDetailsBinding
 
     //==============================================================================================
     // Variable ...
@@ -20,16 +18,23 @@ class SplashScreenActivity : BaseActivity() {
     //==============================================================================================
     // On Create Activity ...
     override fun onCreate(savedInstanceState: Bundle?) {
-        hideStatusBar()
+        changeStatusBarIconsColor(true)
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView( this , R.layout.activity_splash_screen)
+        binding = DataBindingUtil.setContentView( this , R.layout.activity_trip_details)
         initializeActivity()
     }
 
     //==============================================================================================
     // Initialize Activity ...
     private fun initializeActivity(){
-        startNewActivity( Activities.TRIP_DETAILS_ACTIVITY , 1000 , null , true)
+        initializeView()
     }
 
+    private fun initializeView(){
+        binding.tripDetailsSwitch.addStatesFromStrings(listOf( "بيانات المغادرة" , "بيانات الوصول" ))
+        binding.tripDetailsSwitch.selectState(1 , true)
+    }
+
+    //==============================================================================================
+    // On Listener In Activity ...
 }

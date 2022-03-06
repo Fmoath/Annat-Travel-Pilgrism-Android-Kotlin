@@ -129,5 +129,14 @@
     <string name="accompanying">المحرم</string>
     <string name="skip_password">تخطي دون تغيير كلمة المرور</string>
     <string name="view_all_trip_details">مشاهدة كافة تفاصيل الرحلة</string>
+    <string name="work_statement_number">رقم كشف العمل</string>
+    <string name="trip_reservations">حجوزات الرحلة</string>
+    <string name="trip_stage">مراحل الرحلة</string>
+    <string name="trip_number">رقم الرحلة</string>
+    <string name="trip_transporter">الناقل</string>
+    <string name="city">المدينة</string>
+    <string name="port">المنفذ</string>
+    <string name="date">التاريخ</string>
+    <string name="time">الوقت</string>
 
 </resources>

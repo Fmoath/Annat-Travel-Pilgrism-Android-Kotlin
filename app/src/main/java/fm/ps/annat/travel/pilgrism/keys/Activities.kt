@@ -20,5 +20,6 @@ object Activities {
     const val SIGN_UP_ACTIVITY = "SignUpActivity"
     const val RECOVERY_ACCOUNT_ACTIVITY = "RecoveryAccountActivity"
     const val NAVIGATION_ACTIVITY = "NavigationActivity"
+    const val TRIP_DETAILS_ACTIVITY = "TripDetailsActivity"
 
 }
