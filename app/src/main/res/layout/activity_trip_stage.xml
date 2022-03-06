@@ -46,10 +46,10 @@
 
         </LinearLayout>
         <TextView
-            android:id="@+id/trip_stage_trip_reservations"
+            android:id="@+id/trip_stage_trip_stage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/trip_reservations"
+            android:text="@string/trip_stage"
             style="@style/Text_h6_r"
             android:gravity="center"
             android:background="@drawable/shape_rectangle_corner_oval_backgraund"
@@ -61,67 +61,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/trip_stage_container_statement_number"/>
 
-        <LinearLayout
-            android:id="@+id/trip_stage_trip_table_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginStart="@dimen/_25sdp"
-            android:layout_marginEnd="@dimen/_25sdp"
-            android:layout_marginTop="@dimen/_15sdp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/trip_stage_trip_reservations">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="@string/reservations_type"
-                style="@style/Text_h7_r"
-                android:textColor="@color/amber"
-                android:gravity="center"/>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="@string/reservations_place"
-                style="@style/Text_h7_r"
-                android:textColor="@color/amber"
-                android:gravity="center"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="@string/reservations_period"
-                style="@style/Text_h7_r"
-                android:textColor="@color/amber"
-                android:gravity="center"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="@string/city"
-                style="@style/Text_h7_r"
-                android:textColor="@color/amber"
-                android:gravity="center"/>
-
-        </LinearLayout>
-
-        <View
-            android:id="@+id/trip_stage_trip_table_view"
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@color/back_ground_form"
-            android:layout_marginStart="@dimen/_25sdp"
-            android:layout_marginEnd="@dimen/_25sdp"
-            android:layout_marginTop="@dimen/_10sdp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/trip_stage_trip_table_title"/>
 
         <FrameLayout
             android:id="@+id/trip_stage_trip_container"
@@ -129,7 +68,7 @@
             android:layout_height="0dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/trip_stage_trip_table_view"
+            app:layout_constraintTop_toBottomOf="@+id/trip_stage_trip_stage"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

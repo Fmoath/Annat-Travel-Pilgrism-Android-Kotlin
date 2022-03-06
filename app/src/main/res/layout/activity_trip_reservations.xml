@@ -14,7 +14,7 @@
         tools:context=".views.activities.TripReservationsActivity">
 
         <LinearLayout
-            android:id="@+id/trip_stage_container_statement_number"
+            android:id="@+id/trip_reservations_container_statement_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -29,7 +29,6 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:id="@+id/fragment_home_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/work_statement_number"
@@ -37,7 +36,7 @@
                 android:gravity="center" />
 
             <TextView
-                android:id="@+id/fragment_home_level"
+                android:id="@+id/trip_reservations_work_statement_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="2345"
@@ -46,7 +45,7 @@
 
         </LinearLayout>
         <TextView
-            android:id="@+id/trip_stage_trip_reservations"
+            android:id="@+id/trip_reservations_trip_reservations"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/trip_reservations"
@@ -59,10 +58,10 @@
             android:layout_marginTop="@dimen/_15sdp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/trip_stage_container_statement_number"/>
+            app:layout_constraintTop_toBottomOf="@+id/trip_reservations_container_statement_number"/>
 
         <LinearLayout
-            android:id="@+id/trip_stage_trip_table_title"
+            android:id="@+id/trip_reservations_trip_table_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -72,7 +71,7 @@
             android:layout_marginTop="@dimen/_15sdp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/trip_stage_trip_reservations">
+            app:layout_constraintTop_toBottomOf="@+id/trip_reservations_trip_reservations">
 
             <TextView
                 android:layout_width="0dp"
@@ -112,7 +111,7 @@
         </LinearLayout>
 
         <View
-            android:id="@+id/trip_stage_trip_table_view"
+            android:id="@+id/trip_reservations_trip_table_view"
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="@color/back_ground_form"
@@ -121,16 +120,17 @@
             android:layout_marginTop="@dimen/_10sdp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/trip_stage_trip_table_title"/>
+            app:layout_constraintTop_toBottomOf="@+id/trip_reservations_trip_table_title"/>
 
         <FrameLayout
-            android:id="@+id/trip_stage_trip_container"
+            android:id="@+id/trip_reservations_trip_container"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/trip_stage_trip_table_view"
+            app:layout_constraintTop_toBottomOf="@+id/trip_reservations_trip_table_view"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>
