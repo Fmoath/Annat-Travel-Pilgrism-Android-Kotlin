@@ -9,6 +9,7 @@
         android:roundIcon="@drawable/ic_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AnnatTravelPilgrism">
+
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -24,6 +25,16 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="YOUR_API_KEY" />
 
+        <activity
+            android:name=".views.activities.TripReservationsActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="fm.ps.annat.travel.pilgrism" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="TripReservationsActivity" />
+            </intent-filter>
+        </activity>
 
         <activity
             android:name=".views.activities.TripStageActivity"

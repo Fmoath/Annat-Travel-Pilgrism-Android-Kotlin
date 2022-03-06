@@ -1,35 +1,35 @@
 package fm.ps.annat.travel.pilgrism.views.activities
 
-import android.annotation.SuppressLint
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import fm.ps.annat.travel.pilgrism.R
-import fm.ps.annat.travel.pilgrism.databinding.ActivitySplashScreenBinding
-import fm.ps.annat.travel.pilgrism.keys.Activities
+import fm.ps.annat.travel.pilgrism.databinding.ActivityTripReservationsBinding
 
-@SuppressLint("CustomSplashScreen")
-class SplashScreenActivity : BaseActivity() {
+class TripReservationsActivity : AppCompatActivity() {
 
     //==============================================================================================
     // Binding ...
-    private lateinit var binding : ActivitySplashScreenBinding
+    private lateinit var binding : ActivityTripReservationsBinding
 
     //==============================================================================================
     // Variable ...
 
+
     //==============================================================================================
     // On Create Activity ...
     override fun onCreate(savedInstanceState: Bundle?) {
-        hideStatusBar()
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView( this , R.layout.activity_splash_screen)
+        binding = DataBindingUtil.setContentView( this , R.layout.activity_trip_reservations)
         initializeActivity()
     }
 
     //==============================================================================================
     // Initialize Activity ...
     private fun initializeActivity(){
-        startNewActivity( Activities.TRIP_RESERVATION_ACTIVITY, 1000 , null , true)
+
     }
 
+    //==============================================================================================
+    // On Listener In Activity ...
 }

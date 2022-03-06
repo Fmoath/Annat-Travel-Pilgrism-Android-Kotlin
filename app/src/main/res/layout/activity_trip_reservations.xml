@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl"
+        tools:context=".views.activities.TripReservationsActivity">
+
+        <LinearLayout
+            android:id="@+id/trip_stage_container_statement_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/shape_rectangle_corner_background_head_page"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/fragment_home_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/work_statement_number"
+                style="@style/Text_h6_r"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/fragment_home_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2345"
+                style="@style/Text_h6_m"
+                android:textColor="@color/amber" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/trip_stage_trip_reservations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/trip_reservations"
+            style="@style/Text_h6_r"
+            android:gravity="center"
+            android:background="@drawable/shape_rectangle_corner_oval_backgraund"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trip_stage_container_statement_number"/>
+
+        <LinearLayout
+            android:id="@+id/trip_stage_trip_table_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trip_stage_trip_reservations">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/reservations_type"
+                style="@style/Text_h7_r"
+                android:textColor="@color/amber"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/reservations_place"
+                style="@style/Text_h7_r"
+                android:textColor="@color/amber"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/reservations_period"
+                style="@style/Text_h7_r"
+                android:textColor="@color/amber"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/city"
+                style="@style/Text_h7_r"
+                android:textColor="@color/amber"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/trip_stage_trip_table_view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/back_ground_form"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trip_stage_trip_table_title"/>
+
+        <FrameLayout
+            android:id="@+id/trip_stage_trip_container"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trip_stage_trip_table_view"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

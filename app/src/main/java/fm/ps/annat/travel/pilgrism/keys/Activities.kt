@@ -22,5 +22,6 @@ object Activities {
     const val NAVIGATION_ACTIVITY = "NavigationActivity"
     const val TRIP_DETAILS_ACTIVITY = "TripDetailsActivity"
     const val TRIP_STAGE_ACTIVITY = "TripStageActivity"
+    const val TRIP_RESERVATION_ACTIVITY = "TripReservationsActivity"
 
 }
