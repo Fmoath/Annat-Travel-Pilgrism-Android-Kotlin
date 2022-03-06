@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl">
+
+        <LinearLayout
+            android:id="@+id/item_trip_reservations_container_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/item_trip_reservations_type"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/reservations_type"
+                style="@style/Text_h7_r"
+                android:textColor="@color/blue"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/item_trip_reservations_place"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/reservations_place"
+                style="@style/Text_h7_r"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/item_trip_reservations_period"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/reservations_period"
+                style="@style/Text_h7_r"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/item_trip_reservations_city"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/city"
+                style="@style/Text_h7_r"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/item_trip_reservations_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/back_ground_form"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_trip_reservations_container_table" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
