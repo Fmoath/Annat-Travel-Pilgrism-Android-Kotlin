@@ -24,6 +24,17 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="YOUR_API_KEY" />
 
+
+        <activity
+            android:name=".views.activities.TripStageActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="fm.ps.annat.travel.pilgrism" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="TripStageActivity" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".views.activities.TripDetailsActivity"
             android:exported="true">
@@ -34,7 +45,6 @@
                 <category android:name="TripDetailsActivity" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".views.activities.MainActivity"
             android:exported="true">

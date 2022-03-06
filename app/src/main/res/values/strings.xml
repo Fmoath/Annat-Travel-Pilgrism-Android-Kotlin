@@ -138,5 +138,8 @@
     <string name="port">المنفذ</string>
     <string name="date">التاريخ</string>
     <string name="time">الوقت</string>
+    <string name="reservations_type">نوع الحجز</string>
+    <string name="reservations_place">مكان الحجز</string>
+    <string name="reservations_period">مدة الحجز</string>
 
 </resources>
