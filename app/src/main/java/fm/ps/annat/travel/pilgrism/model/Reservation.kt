@@ -11,7 +11,12 @@ package fm.ps.annat.travel.pilgrism.model
  * @Website : fm-ps.online
  * @Whatsapp : 00972597718418
  */
-class Reservation (private var id : Int, private var type : String, private var place: String ,  private var period: String ,  private var city: String ) {
+class Reservation (
+    private var id : Int,
+    private var type : String,
+    private var place: String,
+    private var period: String,
+    private var city: String ) {
 
     fun getId() : Int{
         return id

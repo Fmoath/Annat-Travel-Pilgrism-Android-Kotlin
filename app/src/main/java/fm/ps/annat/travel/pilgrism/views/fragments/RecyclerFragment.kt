@@ -13,12 +13,15 @@ import fm.ps.annat.travel.pilgrism.R
 import fm.ps.annat.travel.pilgrism.adapter.recycler.contactus.ContactUsRecyclerAdapter
 import fm.ps.annat.travel.pilgrism.adapter.recycler.notification.NotificationRecyclerAdapter
 import fm.ps.annat.travel.pilgrism.adapter.recycler.trip.reservation.TripReservationRecyclerAdapter
+import fm.ps.annat.travel.pilgrism.adapter.recycler.trip.stage.TripStageRecyclerAdapter
 import fm.ps.annat.travel.pilgrism.databinding.FragmentRecyclerBinding
 import fm.ps.annat.travel.pilgrism.keys.ContactUss
 import fm.ps.annat.travel.pilgrism.keys.Recyclers
+import fm.ps.annat.travel.pilgrism.keys.Stages
 import fm.ps.annat.travel.pilgrism.model.ContactUs
 import fm.ps.annat.travel.pilgrism.model.Notification
 import fm.ps.annat.travel.pilgrism.model.Reservation
+import fm.ps.annat.travel.pilgrism.model.Stage
 import kotlin.properties.Delegates
 
 /**
@@ -60,12 +63,14 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener {
     private val contactUss : ArrayList<ContactUs> = ArrayList<ContactUs>()
     private val notifications : ArrayList<Notification> = ArrayList<Notification>()
     private val reservations : ArrayList<Reservation> = ArrayList<Reservation>()
+    private val stages : ArrayList<Stage> = ArrayList<Stage>()
 
     //==============================================================================================
     // Adapter ...
     private lateinit var contactUsRecyclerAdapter: ContactUsRecyclerAdapter
     private lateinit var notificationRecyclerAdapter: NotificationRecyclerAdapter
     private lateinit var tripReservationRecyclerAdapter: TripReservationRecyclerAdapter
+    private lateinit var tripStageRecyclerAdapter: TripStageRecyclerAdapter
 
     //==============================================================================================
     // Variable ...
@@ -119,6 +124,7 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener {
             Recyclers.RECYCLER_CONTACT_US -> contactUsRecycler()
             Recyclers.RECYCLER_NOTIFICATION -> notificationRecycler()
             Recyclers.RECYCLER_TRIP_RESERVATION -> tripReservationRecycler()
+            Recyclers.RECYCLER_TRIP_STAGE -> tripStageRecycler()
         }
     }
 
@@ -163,7 +169,7 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener {
     }
 
     //==============================================================================================
-    // Contact Us Recycler ...
+    // Trip Reservation Recycler ...
     private fun tripReservationRecycler() {
         reservations.clear()
         binding.fragmentRecycler.isNestedScrollingEnabled = false
@@ -175,6 +181,22 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener {
         reservations.add(Reservation( 0 , "تبييت" , "فندق النجمة" , "4 ليالي" , "الرياض"))
         tripReservationRecyclerAdapter = TripReservationRecyclerAdapter(reservations)
         initializeRecyclerLinearVerticalView(tripReservationRecyclerAdapter , false)
+    }
+
+
+    //==============================================================================================
+    // Trip Stage Recycler ...
+    private fun tripStageRecycler() {
+        stages.clear()
+        binding.fragmentRecycler.isNestedScrollingEnabled = false
+        stages.add(Stage( 0 , "الإستقبال في المطار" , "12-4-2022 , 3:40 PM" , "12-4-2022 , 3:40 PM" , Stages.STAGE_COMPLETED))
+        stages.add(Stage( 0 , "الوصول إلى فندق المدينة" , "12-4-2022 , 3:40 PM" , "12-4-2022 , 3:40 PM" , Stages.STAGE_COMPLETED))
+        stages.add(Stage( 0 , "الوصول إلى مكة المكرمة" , "12-4-2022 , 3:40 PM" , "12-4-2022 , 3:40 PM" , Stages.STAGE_UNDERWAY))
+        stages.add(Stage( 0 , "بدأ مناسك العمرة" , "12-4-2022 , 3:40 PM" , "12-4-2022 , 3:40 PM" , Stages.STAGE_DID_NOT_START))
+        stages.add(Stage( 0 , "الوصول إلى فندق التبييت" , "12-4-2022 , 3:40 PM" , "12-4-2022 , 3:40 PM" , Stages.STAGE_DID_NOT_START))
+        stages.add(Stage( 0 , "الذهاب للمزار السياحي" , "12-4-2022 , 3:40 PM" , "12-4-2022 , 3:40 PM" , Stages.STAGE_DID_NOT_START))
+        tripStageRecyclerAdapter = TripStageRecyclerAdapter(stages)
+        initializeRecyclerLinearVerticalView(tripStageRecyclerAdapter , false)
     }
 
     //==============================================================================================

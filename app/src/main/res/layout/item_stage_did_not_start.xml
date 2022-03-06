@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layoutDirection="rtl"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:text="1"
+                style="@style/Text_h3_m"
+                android:gravity="center"
+                android:background="@drawable/shape_oval_stage_did_not_start" />
+
+            <TextView
+                android:id="@+id/stage_did_not_start_title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="الإستقبال في المطار"
+                style="@style/Text_h6_m"
+                android:layout_marginStart="@dimen/_20sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stage_did_not_start"
+                style="@style/Text_h7_r"
+                android:textColor="@color/red" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_5sdp">
+
+            <View
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:background="@drawable/shape_rectangle_view_stage_did_not_start" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/stage_did_not_start_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="وقت البدء : 12-3-2022 ,2:40 مساءاً"
+                    style="@style/Text_h7_r"
+                    android:layout_marginStart="@dimen/_40sdp"
+                    android:layout_marginBottom="@dimen/_5sdp" />
+
+                <TextView
+                    android:id="@+id/stage_did_not_start_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="وقت الإنتهاء : 15-3-2022 ,2:40 مساءاً"
+                    style="@style/Text_h7_r"
+                    android:layout_marginStart="@dimen/_40sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

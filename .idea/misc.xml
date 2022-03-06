@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable-mdpi/shape_oval_stage_did_not_start.xml" value="0.2045" />
+        <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable-mdpi/shape_oval_stage_under_way.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable-mdpi/shape_rectangle_corner_oval_backgraund.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable-v24/shape_oval_amber.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2045" />
@@ -17,6 +19,13 @@
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable/shape_contact_us_company.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable/shape_oval_amber.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable/shape_oval_blue.xml" value="0.2045" />
+        <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable/shape_oval_stage_completed.xml" value="0.2045" />
+        <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable/shape_oval_stage_did_not_start.xml" value="0.2045" />
+        <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable/shape_oval_stage_underway.xml" value="0.2045" />
+        <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable/shape_rectanger_view_stage_completed.xml" value="0.2045" />
+        <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable/shape_rectanger_view_stage_did_not_answer.xml" value="0.2045" />
+        <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable/shape_rectanger_view_stage_did_not_start.xml" value="0.2045" />
+        <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable/shape_rectanger_view_stage_underway.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable/shape_rectangle_corner_background_ads_container.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable/shape_rectangle_corner_background_bottom_navigation.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/drawable/shape_rectangle_corner_background_form.xml" value="0.2045" />
@@ -46,6 +55,9 @@
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/layout/item_contact_us_client.xml" value="0.26875" />
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/layout/item_contact_us_company.xml" value="0.26875" />
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/layout/item_notification.xml" value="0.26875" />
+        <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/layout/item_stage_completed.xml" value="0.33" />
+        <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/layout/item_stage_did_not_start.xml" value="0.26875" />
+        <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/layout/item_stage_underway.xml" value="0.26875" />
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/layout/item_trip_reservation.xml" value="0.26875" />
         <entry key="..\:/2 - Annat/1 - travel/android/PilgrismsApplication/app/src/main/res/menu/main_menu.xml" value="0.26875" />
       </map>

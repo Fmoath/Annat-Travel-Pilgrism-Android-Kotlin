@@ -19,6 +19,7 @@ class TripStageActivity : BaseActivity() {
     //==============================================================================================
     // On Create Activity ...
     override fun onCreate(savedInstanceState: Bundle?) {
+        changeStatusBarIconsColor( true )
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView( this , R.layout.activity_trip_stage)
         initializeActivity()

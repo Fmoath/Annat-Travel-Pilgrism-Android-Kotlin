@@ -6,16 +6,13 @@ package fm.ps.annat.travel.pilgrism.keys
  * @by : Eng-Moath Raed Abu Ouda
  * @CompanyManager : FM-Team
  * @In : Palestine - Gaza - Biet Hanoun
- * @OnDate : 3/5/2022
- * @InTheHour : 11 : 35 : 19
+ * @OnDate : 3/6/2022
+ * @InTheHour : 17 : 37 : 04
  * @Website : fm-ps.online
  * @Whatsapp : 00972597718418
  */
-object Recyclers {
-
-    const val RECYCLER_CONTACT_US = 0
-    const val RECYCLER_NOTIFICATION = 1
-    const val RECYCLER_TRIP_RESERVATION = 2
-    const val RECYCLER_TRIP_STAGE = 3
-
+object Stages {
+    const val STAGE_COMPLETED = 0
+    const val STAGE_UNDERWAY = 1
+    const val STAGE_DID_NOT_START = 2
 }

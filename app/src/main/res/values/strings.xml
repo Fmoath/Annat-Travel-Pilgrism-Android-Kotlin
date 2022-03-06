@@ -141,5 +141,8 @@
     <string name="reservations_type">نوع الحجز</string>
     <string name="reservations_place">مكان الحجز</string>
     <string name="reservations_period">مدة الحجز</string>
+    <string name="stage_completed">مرحلة مكتملة</string>
+    <string name="stage_underway">قيد التقدم</string>
+    <string name="stage_did_not_start">لم تبدأ بعد</string>
 
 </resources>
