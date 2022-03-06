@@ -12,11 +12,13 @@ import androidx.recyclerview.widget.RecyclerView
 import fm.ps.annat.travel.pilgrism.R
 import fm.ps.annat.travel.pilgrism.adapter.recycler.contactus.ContactUsRecyclerAdapter
 import fm.ps.annat.travel.pilgrism.adapter.recycler.notification.NotificationRecyclerAdapter
+import fm.ps.annat.travel.pilgrism.adapter.recycler.trip.reservation.TripReservationRecyclerAdapter
 import fm.ps.annat.travel.pilgrism.databinding.FragmentRecyclerBinding
 import fm.ps.annat.travel.pilgrism.keys.ContactUss
 import fm.ps.annat.travel.pilgrism.keys.Recyclers
 import fm.ps.annat.travel.pilgrism.model.ContactUs
 import fm.ps.annat.travel.pilgrism.model.Notification
+import fm.ps.annat.travel.pilgrism.model.Reservation
 import kotlin.properties.Delegates
 
 /**
@@ -57,11 +59,13 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener {
     // Arrays List ...
     private val contactUss : ArrayList<ContactUs> = ArrayList<ContactUs>()
     private val notifications : ArrayList<Notification> = ArrayList<Notification>()
+    private val reservations : ArrayList<Reservation> = ArrayList<Reservation>()
 
     //==============================================================================================
     // Adapter ...
     private lateinit var contactUsRecyclerAdapter: ContactUsRecyclerAdapter
     private lateinit var notificationRecyclerAdapter: NotificationRecyclerAdapter
+    private lateinit var tripReservationRecyclerAdapter: TripReservationRecyclerAdapter
 
     //==============================================================================================
     // Variable ...
@@ -114,6 +118,7 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener {
         when (type) {
             Recyclers.RECYCLER_CONTACT_US -> contactUsRecycler()
             Recyclers.RECYCLER_NOTIFICATION -> notificationRecycler()
+            Recyclers.RECYCLER_TRIP_RESERVATION -> tripReservationRecycler()
         }
     }
 
@@ -155,6 +160,21 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener {
 
         notificationRecyclerAdapter = NotificationRecyclerAdapter(notifications)
         initializeRecyclerLinearVerticalView(notificationRecyclerAdapter , false)
+    }
+
+    //==============================================================================================
+    // Contact Us Recycler ...
+    private fun tripReservationRecycler() {
+        reservations.clear()
+        binding.fragmentRecycler.isNestedScrollingEnabled = false
+        reservations.add(Reservation( 0 , "تبيت" , "فندق مكرمة" , "3 ليالي" , "مكة المكرمة"))
+        reservations.add(Reservation( 0 , "تبيين" , "فندق الحلو" , "5 ليالي" , "المدينة المنورة"))
+        reservations.add(Reservation( 0 , "نقل ومواصلات" , "الوطنية للمواصلات" , "3 ساعات" , "مكة المكرمة"))
+        reservations.add(Reservation( 0 , "مزار" , "المسجد النبوي" , "4 ساعات" , "المدينة المنورة"))
+        reservations.add(Reservation( 0 , "نقل ومواصلات" , "الرياض للمواصلات" , "ساعتين" , "الرياض"))
+        reservations.add(Reservation( 0 , "تبييت" , "فندق النجمة" , "4 ليالي" , "الرياض"))
+        tripReservationRecyclerAdapter = TripReservationRecyclerAdapter(reservations)
+        initializeRecyclerLinearVerticalView(tripReservationRecyclerAdapter , false)
     }
 
     //==============================================================================================

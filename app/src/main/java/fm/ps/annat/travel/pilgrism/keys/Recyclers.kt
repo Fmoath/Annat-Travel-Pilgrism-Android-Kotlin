@@ -12,6 +12,9 @@ package fm.ps.annat.travel.pilgrism.keys
  * @Whatsapp : 00972597718418
  */
 object Recyclers {
+
     const val RECYCLER_CONTACT_US = 0
     const val RECYCLER_NOTIFICATION = 1
+    const val RECYCLER_TRIP_RESERVATION = 2
+
 }

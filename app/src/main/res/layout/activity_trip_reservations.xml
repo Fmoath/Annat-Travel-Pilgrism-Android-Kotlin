@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layoutDirection="rtl"
+        android:background="@color/white"
         tools:context=".views.activities.TripReservationsActivity">
 
         <LinearLayout
@@ -80,7 +81,7 @@
                 android:text="@string/reservations_type"
                 style="@style/Text_h7_r"
                 android:textColor="@color/amber"
-                android:gravity="center"/>
+                android:gravity="start"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
