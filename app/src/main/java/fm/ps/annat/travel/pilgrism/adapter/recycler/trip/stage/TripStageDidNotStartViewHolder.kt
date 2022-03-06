@@ -40,9 +40,10 @@ class TripStageDidNotStartViewHolder(private var binding: ItemStageDidNotStartBi
     }
 
     private fun initializeViews() {
+        binding.stageDidNotStartNumber.text = stage.getId().toString()
         binding.stageDidNotStartTitle.text = stage.getTitle()
-        binding.stageDidNotStartStartTime.text = stage.getStartTime()
-        binding.stageDidNotStartEndTime.text = stage.getEndTime()
+        binding.stageDidNotStartStartTime.text = "وقت البدء : " + stage.getStartTime()
+        binding.stageDidNotStartEndTime.text = "وقت الإنتهاء : " + stage.getEndTime()
     }
 
     //==============================================================================================

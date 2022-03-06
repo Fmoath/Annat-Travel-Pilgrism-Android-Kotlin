@@ -189,12 +189,12 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener {
     private fun tripStageRecycler() {
         stages.clear()
         binding.fragmentRecycler.isNestedScrollingEnabled = false
-        stages.add(Stage( 0 , "الإستقبال في المطار" , "12-4-2022 , 3:40 PM" , "12-4-2022 , 3:40 PM" , Stages.STAGE_COMPLETED))
-        stages.add(Stage( 0 , "الوصول إلى فندق المدينة" , "12-4-2022 , 3:40 PM" , "12-4-2022 , 3:40 PM" , Stages.STAGE_COMPLETED))
-        stages.add(Stage( 0 , "الوصول إلى مكة المكرمة" , "12-4-2022 , 3:40 PM" , "12-4-2022 , 3:40 PM" , Stages.STAGE_UNDERWAY))
-        stages.add(Stage( 0 , "بدأ مناسك العمرة" , "12-4-2022 , 3:40 PM" , "12-4-2022 , 3:40 PM" , Stages.STAGE_DID_NOT_START))
-        stages.add(Stage( 0 , "الوصول إلى فندق التبييت" , "12-4-2022 , 3:40 PM" , "12-4-2022 , 3:40 PM" , Stages.STAGE_DID_NOT_START))
-        stages.add(Stage( 0 , "الذهاب للمزار السياحي" , "12-4-2022 , 3:40 PM" , "12-4-2022 , 3:40 PM" , Stages.STAGE_DID_NOT_START))
+        stages.add(Stage( 1 , "الإستقبال في المطار" , "12-4-2022 , 3:40 PM" , "12-4-2022 , 3:40 PM" , Stages.STAGE_COMPLETED))
+        stages.add(Stage( 3 , "الوصول إلى فندق المدينة" , "12-4-2022 , 3:40 PM" , "12-4-2022 , 3:40 PM" , Stages.STAGE_COMPLETED))
+        stages.add(Stage( 4 , "الوصول إلى مكة المكرمة" , "12-4-2022 , 3:40 PM" , "12-4-2022 , 3:40 PM" , Stages.STAGE_UNDERWAY))
+        stages.add(Stage( 5 , "بدأ مناسك العمرة" , "12-4-2022 , 3:40 PM" , "12-4-2022 , 3:40 PM" , Stages.STAGE_DID_NOT_START))
+        stages.add(Stage( 6 , "الوصول إلى فندق التبييت" , "12-4-2022 , 3:40 PM" , "12-4-2022 , 3:40 PM" , Stages.STAGE_DID_NOT_START))
+        stages.add(Stage( 7 , "الذهاب للمزار السياحي" , "12-4-2022 , 3:40 PM" , "12-4-2022 , 3:40 PM" , Stages.STAGE_DID_NOT_START))
         tripStageRecyclerAdapter = TripStageRecyclerAdapter(stages)
         initializeRecyclerLinearVerticalView(tripStageRecyclerAdapter , false)
     }

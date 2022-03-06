@@ -40,9 +40,10 @@ class TripStageUnderwayViewHolder(private var binding: ItemStageUnderwayBinding)
     }
 
     private fun initializeViews() {
+        binding.stageUnderwayNumber.text = stage.getId().toString()
         binding.stageUnderwayTitle.text = stage.getTitle()
-        binding.stageUnderwayStartTime.text = stage.getStartTime()
-        binding.stageUnderwayEndTime.text = stage.getEndTime()
+        binding.stageUnderwayStartTime.text = "وقت البدء : " + stage.getStartTime()
+        binding.stageUnderwayEndTime.text = "وقت الإنتهاء : " + stage.getEndTime()
     }
 
     //==============================================================================================

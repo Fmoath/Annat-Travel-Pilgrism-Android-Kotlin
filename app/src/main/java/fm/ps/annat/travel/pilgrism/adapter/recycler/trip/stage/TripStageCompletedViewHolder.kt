@@ -40,9 +40,10 @@ class TripStageCompletedViewHolder(private var binding: ItemStageCompletedBindin
     }
 
     private fun initializeViews() {
+        binding.stageCompletedNumber.text = stage.getId().toString()
         binding.stageCompletedTitle.text = stage.getTitle()
-        binding.stageCompletedStartTime.text = stage.getStartTime()
-        binding.stageCompletedEndTime.text = stage.getEndTime()
+        binding.stageCompletedStartTime.text = "وقت البدء : " + stage.getStartTime()
+        binding.stageCompletedEndTime.text ="وقت الإنتهاء : " + stage.getEndTime()
     }
 
     //==============================================================================================
