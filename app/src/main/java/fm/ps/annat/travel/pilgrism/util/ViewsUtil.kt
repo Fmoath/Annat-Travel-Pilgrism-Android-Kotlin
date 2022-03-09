@@ -30,20 +30,4 @@ object ViewsUtil {
             thisView.isEnabled = true
         }
     }
-
-    //==============================================================================================
-    // Edit Text ...
-    fun isTheEditTextEmpty(editText: EditText?): Boolean {
-        if (editText == null) {
-            return true
-        }
-        val str: CharSequence = editText.getText().toString()
-        return TextUtils.isEmpty(str)
-    }
-
-    fun getTextFromEditText(editText: EditText?): String {
-        return if (editText == null) "" else editText.getText().toString().trim { it <= ' ' }
-    }
-
-
 }

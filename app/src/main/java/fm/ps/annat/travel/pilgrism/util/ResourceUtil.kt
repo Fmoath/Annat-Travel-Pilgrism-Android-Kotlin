@@ -4,6 +4,8 @@ import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
 import android.graphics.drawable.Drawable
+import android.os.Build
+import androidx.core.content.ContextCompat
 
 /**
  * Created With Love For : Annat Travel
@@ -16,6 +18,7 @@ import android.graphics.drawable.Drawable
  * @Website : fm-ps.online
  * @Whatsapp : 00972597718418
  */
+
 object ResourceUtil {
 
     //==============================================================================================
@@ -27,7 +30,7 @@ object ResourceUtil {
     //==============================================================================================
     // Color ...
     fun getResourcesColor(activity: Activity, id: Int): Int {
-        return activity.resources.getColor(id)
+        return ContextCompat.getColor( activity , id)
     }
 
     //==============================================================================================

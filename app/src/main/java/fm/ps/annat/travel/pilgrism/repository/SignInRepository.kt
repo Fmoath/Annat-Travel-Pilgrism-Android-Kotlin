@@ -1,7 +1,7 @@
 package fm.ps.annat.travel.pilgrism.repository
 
 import android.widget.EditText
-import fm.ps.annat.travel.pilgrism.validator.Validation
+import fm.ps.lib.validation.validator.Validation
 
 /**
  * Created With Love For : Annat Tarvel
